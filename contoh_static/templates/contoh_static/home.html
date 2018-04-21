@@ -1,0 +1,12 @@
+{% extends 'html/kerangka2.html' %}
+
+{% block judul_halaman %} Contoh Static {% endblock%}
+
+{% block isi_halaman %}
+<h1>Barang yang akan dijual</h1>
+<img src="{% static "contoh_static/20180120_114112_e.jpg" %}" alt = "20180120_114112_e.jpg" >
+<img src="{% static "20170908_144053_e.jpg" %}" alt="20170908_144053_e.jpg" >
+
+<link rel="stylesheet" href="{% static "contoh_static/main.css" %}">
+<p>Terimakasih atas kunjungan anda (from contoh-static).</p>
+{% endblock %}

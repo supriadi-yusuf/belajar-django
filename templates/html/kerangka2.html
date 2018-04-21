@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>{% block judul_halaman %}kerangka.html : judul halaman web{% endblock %}</title>
+  <link rel="stylesheet" href="{% static "main.css" %}">
+</head>
+<body>
+  {% block isi_halaman %}
+  kerangka.html : isi halaman web
+  {% endblock %}
+  <p>
+    Terimakasih atas kunjungan anda (from kerangka2.html).
+  </p>
+</body>
+</html>

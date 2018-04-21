@@ -1,0 +1,13 @@
+{% extends 'html/kerangka.html' %}
+
+{% block judul_halaman %}{{ publisher.name }}{% endblock %}
+
+{% block isi_halaman %}
+
+<h1>{{ publisher.name }}</h1>
+Address : {{ publisher.address }}
+<br/>
+Logo : <img src="{{ publisher.logo.url }}" >
+<hr>
+pesan : {{ pesan }}
+{% endblock %}

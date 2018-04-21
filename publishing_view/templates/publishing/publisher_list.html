@@ -1,0 +1,18 @@
+{% extends 'html/kerangka.html' %}
+
+{% block judul_halaman %} Daftar Penerbit {% endblock %}
+{% block isi_halaman %}
+
+{% if publisher_list %}
+Daftar Penerbit :
+<ul>
+  {% for publisher in publisher_list %}
+  <li><a href="{% url 'publisherview_detail' publisher.id %}">{{ publisher.name }}</a></li>
+  {% endfor %}
+</ul>
+{% else %}
+Tidak ada penerbit
+{% endif %}
+
+<a href="{% url 'publisherview_list' %}">refresh</a>
+{% endblock %}
